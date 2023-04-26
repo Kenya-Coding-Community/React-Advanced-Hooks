@@ -10,3 +10,4 @@
 - Sharleen Ringa
 
 ---
+It's important to understand that hooks are basically just functions.
