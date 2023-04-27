@@ -17,13 +17,8 @@ Let's see one by one :
 - useState.
 - useEffect. 
 - useContext.
-- useReducer. 
-- useCallback.
-- useMemo. 
 - useRef. 
-- useImperativeHandle. 
-- useLayoutEffect. 
-- useDebugValue.
+
 ### Topic: Discussing Hooks
 #### useState
 
@@ -154,3 +149,13 @@ The dispatch function that lets you update the state to a different value and tr
 
 ##### note:
 useReducer is a Hook, so you can only call it at the top level of your component or your own Hooks.You can’t call it inside loops or conditions.If you need that, extract a new component and move the state into it.
+
+Let's see the others : 
+- useCallback.
+- useMemo. 
+- useImperativeHandle. 
+- useLayoutEffect. 
+- useDebugValue.
+
+find link attached
+https://react.dev/reference/react
