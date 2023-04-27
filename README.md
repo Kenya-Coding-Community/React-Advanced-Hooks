@@ -11,7 +11,7 @@
 
 ---
 It's important to understand that hooks are basically just functions.
-💎Hooks : ✨ The Hooks consists of two fundamental and primary hooks which are mentioned below.
+Hooks : The Hooks consists of two fundamental and primary hooks which are mentioned below.
 In addition to these fundamental hooks, there are a number of auxiliary hooks which can be used for advanced behaviour.
 Let's see one by one : 
 - useState.
@@ -106,7 +106,7 @@ function MyComponent() {
 ```
 useRef returns an object with a single property:
 
-current: Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
+Initially, it’s set to the initialValue you have passed. You can later set it to something else. If you pass the ref object to React as a ref attribute to a JSX node, React will set its current property.
 On the next renders, useRef will return the same object.
 
 You can mutate the ref.current property. Unlike state, it is mutable. However, if it holds an object that is used for rendering (for example, a piece of your state), then you shouldn’t mutate that object.
