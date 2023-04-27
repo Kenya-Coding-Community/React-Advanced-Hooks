@@ -25,6 +25,9 @@ Let's see one by one :
 - useDebugValue.
 ### Topic: Discussing Hooks
 #### useState
+
+First, we need to import the useState hook:
+
 ```jsx
 import React, { useState } from 'react'; 
 ```
