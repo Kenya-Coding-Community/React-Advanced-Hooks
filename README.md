@@ -17,7 +17,10 @@ Let's see one by one :
 - useState.
 - useEffect. 
 - useContext.
-- useRef. 
+- useRef.
+
+##### note:
+React Hooks are functions that let us hook into the React state and lifecycle features from function components. By this, we mean that hooks allow us to easily manipulate the state of our functional component without needing to convert them into class components.
 
 ### Topic: Discussing Hooks
 #### useState
@@ -168,3 +171,6 @@ Let's see the others :
 - useDebugValue.
 
 [find link attached](https://react.dev/reference/react)
+
+##### note:
+React Hooks are functions that let us hook into the React state and lifecycle features from function components. By this, we mean that hooks allow us to easily manipulate the state of our functional component without needing to convert them into class components.
