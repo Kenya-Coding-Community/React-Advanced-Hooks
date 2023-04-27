@@ -47,3 +47,32 @@ function Hello() {
 In the example above, we create a name state variable and a setName function. The square brackets syntax is called array destructuring. It assigns the name variable to the current state value, and setName to the function that allows to change the state. You can name these variables anything you like.
 Then, we pass "David" as the initial value for our name variable to useState().
 
+#### useEffect
+useEffect is a React Hook that lets you synchronize a component with an external system.
+
+
+```jsx
+useEffect(setup, dependencies?)
+```
+useEffect is a Hook, so you can only call it at the top level of your component or your own Hooks. You can’t call it inside loops or conditions. If you need that, extract a new component and move the state into it.
+
+Call useEffect at the top level of your component to declare an Effect:
+
+```jsx
+import { useEffect } from 'react';
+import { createConnection } from './chat.js';
+
+function ChatRoom({ roomId }) {
+  const [serverUrl, setServerUrl] = useState('https://localhost:1234');
+
+  useEffect(() => {
+    const connection = createConnection(serverUrl, roomId);
+    connection.connect();
+    return () => {
+      connection.disconnect();
+    };
+  }, [serverUrl, roomId]);
+  // ...
+}
+```
+
