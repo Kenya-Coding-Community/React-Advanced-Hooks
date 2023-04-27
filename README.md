@@ -92,4 +92,12 @@ useEffect(() => {
 ```
 In this example, the effect itself doesn't return a value - instead, it defines a cleanup function that is returned when the component is unmounted or when the effect is re-run with different dependencies. The cleanup function is responsible for doing any necessary cleanup tasks, such as unsubscribing from an external resource, cleaning up event listeners, or resetting state.
 
+#### useRef
+useRef is a React Hook that lets you reference a value that’s not needed for rendering.
+
+```jsx
+const ref = useRef(initialValue)
+```
+
+
 
