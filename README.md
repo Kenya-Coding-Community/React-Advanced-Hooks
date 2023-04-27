@@ -113,8 +113,7 @@ useContext is a React Hook that lets you read and subscribe to context from your
 
 ```jsx
 const value = useContext(SomeContext)
-```
-#####useContext(SomeContext) 
+``` 
 
 Call useContext at the top level of your component to read and subscribe to context.
 
