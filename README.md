@@ -152,8 +152,4 @@ The current state. During the first render, it’s set to init(initialArg) or in
 
 The dispatch function that lets you update the state to a different value and trigger a re-render.
 
-useReducer is a Hook, so you can only call it at the top level of your component or your own Hooks.
-
-You can’t call it inside loops or conditions.
-
-If you need that, extract a new component and move the state into it.
+##### note:useReducer is a Hook, so you can only call it at the top level of your component or your own Hooks.You can’t call it inside loops or conditions.If you need that, extract a new component and move the state into it.
