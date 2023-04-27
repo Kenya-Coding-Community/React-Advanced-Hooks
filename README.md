@@ -25,3 +25,6 @@ Let's see one by one :
 - useDebugValue.
 ### Topic: Discussing Hooks
 #### useState
+```javascript
+import React, { useState } from 'react'; 
+```
