@@ -25,6 +25,20 @@ Let's see one by one :
 - useDebugValue.
 ### Topic: Discussing Hooks
 #### useState
-```javascript
+```jsx
 import React, { useState } from 'react'; 
 ```
+useState returns a pair, the current state value and a function, that lets you change the state.
+
+useState takes one argument, which is the initial value of the state.
+
+example.
+
+```jsx
+function Hello() {
+  const [name, setName] = useState("David");
+
+  return <h1>Hello {name}.</h1>;
+}
+```
+
