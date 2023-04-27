@@ -77,4 +77,19 @@ function ChatRoom({ roomId }) {
 ```
 useEffect returns undefined.
 
+This means useEffect by itself doesn't return a value. Instead, it can have side effects, such as updating state, subscribing or unsubscribing from external resources, or modifying the DOM. When React renders a component that has an effect hook like useEffect, it will run the effect after rendering the component.
+
+If you want to return a cleanup function from your effect, you can define a function that does the necessary cleanup tasks, and then return it at the end of your effect. For example:
+
+```jsx
+useEffect(() => {
+  // do some effect
+  const cleanupFunction = () => {
+    // do some cleanup
+  }
+  return cleanupFunction;
+}, [/* dependency array */]);
+```
+In this example, the effect itself doesn't return a value - instead, it defines a cleanup function that is returned when the component is unmounted or when the effect is re-run with different dependencies. The cleanup function is responsible for doing any necessary cleanup tasks, such as unsubscribing from an external resource, cleaning up event listeners, or resetting state.
+
 
