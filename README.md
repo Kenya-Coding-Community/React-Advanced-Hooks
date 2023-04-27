@@ -132,4 +132,17 @@ useReducer is a React Hook that lets you add a reducer to your component.
 ```jsx
 const [state, dispatch] = useReducer(reducer, initialArg, init?)
 ```
+ 
+Call useReducer at the top level of your component to manage its state with a reducer.
 
+```jsx
+import { useReducer } from 'react';
+
+function reducer(state, action) {
+  // ...
+}
+
+function MyComponent() {
+  const [state, dispatch] = useReducer(reducer, { age: 42 });
+  // ...
+```
