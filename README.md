@@ -75,4 +75,6 @@ function ChatRoom({ roomId }) {
   // ...
 }
 ```
+useEffect returns undefined.
+
 
