@@ -146,3 +146,14 @@ function MyComponent() {
   const [state, dispatch] = useReducer(reducer, { age: 42 });
   // ...
 ```
+useReducer returns an array with exactly two values:
+
+The current state. During the first render, it’s set to init(initialArg) or initialArg (if there’s no init).
+
+The dispatch function that lets you update the state to a different value and trigger a re-render.
+
+useReducer is a Hook, so you can only call it at the top level of your component or your own Hooks.
+
+You can’t call it inside loops or conditions.
+
+If you need that, extract a new component and move the state into it.
