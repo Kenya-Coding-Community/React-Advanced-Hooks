@@ -41,4 +41,6 @@ function Hello() {
   return <h1>Hello {name}.</h1>;
 }
 ```
+In the example above, we create a name state variable and a setName function. The square brackets syntax is called array destructuring. It assigns the name variable to the current state value, and setName to the function that allows to change the state. You can name these variables anything you like.
+Then, we pass "David" as the initial value for our name variable to useState().
 
