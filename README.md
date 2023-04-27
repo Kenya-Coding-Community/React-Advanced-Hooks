@@ -108,6 +108,11 @@ function MyComponent() {
   const inputRef = useRef(null);
   // ...
 ```
+#### useContext
+useContext is a React Hook that lets you read and subscribe to context from your component.
 
+```jsx
+const value = useContext(SomeContext)
+```
 
 
